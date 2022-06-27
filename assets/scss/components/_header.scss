@@ -1,0 +1,101 @@
+.header {
+  width: 100%;
+  height: 110px;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  position: fixed;
+  background-color: transparent;
+
+  &__nav {
+    max-width: 100%;
+    padding: 10px 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem;
+
+    &__logo {
+      display: inline-block;
+      width: 154px;
+      height: 53px;
+      background-image: url(../img/logo.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+
+    }
+    &__link-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+
+      &__item {
+        list-style-type: none;
+        margin-left: 2rem;
+        letter-spacing: 4px;
+
+        &__link {
+          text-decoration: none;
+          color: $primary-color;
+          &:hover {
+            color: rgb(240, 87, 32);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    width: 135vw;
+    position: sticky;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 9;
+
+    &__nav {
+      width: 100%;
+      height: auto;
+      padding: 10px 5vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 15px;
+      height: 3.8rem;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+      &__logo {
+        letter-spacing: 4px;
+        text-decoration: none;
+        color: $secondary-color;
+
+        &:hover {
+          background: lightgrey;
+          padding: 0.6rem 0.6rem;
+        }
+      }
+      &__link-list {
+        display: flex;
+        align-items: center;
+
+        &__item {
+          list-style-type: none;
+
+          margin-left: 2rem;
+          letter-spacing: 4px;
+          &:hover {
+            background: lightgrey;
+            padding: 0.6rem 0.6rem;
+          }
+          &__link {
+            text-decoration: none;
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.footer {
+    background-color: $grey-color;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .footer {
+      background-color: $grey-color;
+      width: 135vw;
+      height: 7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  

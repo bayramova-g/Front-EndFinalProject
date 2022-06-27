@@ -1,0 +1,132 @@
+.index-world {
+  padding: 0px 0 60px;
+  position: relative;
+
+  &__div {
+    max-width: 1280px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+    &__inner {
+      width: 100%;
+      height: 0;
+      padding: 0px 20px 0px;
+      position: absolute;
+      left: 0px;
+      top: 80px;
+
+      &__h2 {
+        height: 0;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 1.29;
+        letter-spacing: 0.01em;
+        color: #2d3192;
+      }
+
+      &__operators_info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: center;
+        width: 100%;
+        height: 0;
+        padding: 0 20px;
+        position: absolute;
+        left: 0;
+        bottom: 160px;
+        &__div {
+          display: block;
+          padding: 27px;
+          border: 2px solid #d3d8e7;
+          border-radius: 4px;
+        }
+      }
+
+      &__operators_info__div__orange {
+        color: #ff931e;
+
+        &::after {
+          background: #ff931e;
+        }
+
+        &::before {
+          background: #ff931e;
+        }
+      }
+
+      &__operators_info__div__blue {
+        color: #ff931e;
+        &::after {
+          background: #2d3192;
+        }
+        &::before {
+          background: #2d3192;
+        }
+      }
+
+      &__operators_info__div__both {
+        color: #ff931e;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.operators__p {
+  margin: 0 0 16px;
+  padding: 0 0 0 30px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #222;
+  position: relative;
+}
+.operators_info p:last-child {
+  margin: 0;
+}
+.operators__p::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 10px);
+  opacity: 0.3;
+}
+.operators__p::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  left: 7px;
+  top: calc(50% - 3px);
+}
+.operators_info p.orange::before {
+  background: #ff931e;
+}
+.operators_info p.orange::after {
+  background: #ff931e;
+}
+.operators_info p.blue::before {
+  background: #2d3192;
+}
+.operators_info p.blue::after {
+  background: #2d3192;
+}
+.operators_info p.both::before {
+ 
+  background: #ff931e;
+}
+.operators_info p.both::after {
+
+  background: #2d3192;
+}

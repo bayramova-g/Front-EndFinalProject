@@ -1,0 +1,29 @@
+{
+  "name": "scss",
+  "version": "0.0.1",
+  "description": "this is a front-end final project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass-prod":"node-sass ./assets/scss/main.scss ./assets/css/style.min.css --output-style=compressed",
+    "compile-sass-dev":"node-sass ./assets/scss/main.scss ./assets/css/style.css -w"
+
+  },
+  "keywords": [
+    "scss",
+    "node.js"
+  ],
+  "author": "bayramova-g",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bayramova-g/Front-EndFinalProject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bayramova-g/scss/issues"
+  },
+  "homepage": "https://github.com/bayramova-g/scss#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

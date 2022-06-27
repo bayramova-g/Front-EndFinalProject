@@ -1,0 +1,80 @@
+.achievements-block {
+  min-height: calc(100vh - 80px);
+  padding: 60px 0 0px;
+
+  &__div {
+    max-width: 1080px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    &__h2 {
+      padding: 0 0 40px;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 1.29;
+      letter-spacing: 0.01em;
+      color: #2d3192;
+    }
+  }
+
+  &__achievements-three {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+    padding: 90px 0;
+    border-top: 1px solid #dbe0e4;
+    &__article {
+      width: calc(33.333% - 20px);
+      &__h3 {
+        padding: 0 0 8px;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 1;
+        letter-spacing: 0.02em;
+        color: #ff931e;
+      
+
+        &__time-me {
+          display: inline-block;
+          width: 90px;
+          vertical-align: bottom;
+          overflow: hidden;
+          position: relative;
+          animation-duration: 0.25s;
+          transition: all 0.25s linear;
+          &__em {
+            animation-duration: 0.25s;
+            transition: all 0.25s linear;
+          }
+        }
+      }
+
+      &__p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.86;
+        text-transform: uppercase;
+        color: #222;
+      }
+    }
+  }
+}
+
+.achievements_three span em.to_top {
+  position: absolute;
+  left: 0;
+  top: -100%;
+}
+.achievements_three span em.to_center {
+  position: absolute;
+  left: 0;
+  top: 0%;
+}
+.achievements_three span em.to_bottom {
+  position: absolute;
+  left: 0;
+  top: 100%;
+}

@@ -1,0 +1,56 @@
+.section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 754px;
+
+  &__contact {
+    width: 70%;
+
+    &__h1 {
+      font-family: "Playfair Display";
+      letter-spacing: 5px;
+      font-size: 36px;
+      line-height: 1.5;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+    &__first-p {
+      font-size: 15px;
+    }
+
+    &__second-p {
+      font-size: 18px;
+      color: $tertiary-color;
+      line-height: 3.5;
+    }
+
+    &__third-p {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    &__form {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+
+      &__input {
+        padding: 8px;
+        display: block;
+        border: none;
+        width: 100%;
+        margin-top: 2rem;
+        border-bottom: 1px solid rgb(187, 184, 184);
+      }
+
+      &__button {
+        width: 9rem;
+        height: 2.5rem;
+        border: none;
+        padding: 10px;
+        margin-top: 2rem;
+      }
+    }
+  }
+}

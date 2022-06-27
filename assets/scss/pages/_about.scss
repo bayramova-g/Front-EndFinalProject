@@ -1,0 +1,231 @@
+.about {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+
+  &__image {
+    padding: 64px;
+    margin-left: 4rem;
+    &__img {
+      width: 500px;
+      height: 627px;
+      filter: opacity(0.6);
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 31rem;
+    height: 39rem;
+    align-content: center;
+    padding: 64px;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 4rem;
+
+    &:after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      background-color: #dfd2d2;
+      width: 70%;
+      margin-right: 40rem;
+      top: 100%;
+    }
+
+    &__h1 {
+      font-family: "Playfair Display";
+      letter-spacing: 5px;
+      font-weight: 400;
+      margin: 10px 0;
+      font-size: 36px;
+      margin-bottom: 2rem;
+    }
+
+    &__h5 {
+      letter-spacing: 5px;
+      font-weight: 400;
+      margin: 10px 0;
+      margin-bottom: 1rem;
+    }
+
+    &__first-p {
+      line-height: 1.5;
+      text-align: start;
+      margin-bottom: 1rem;
+
+      &__span {
+        background-color: #f1f1f1;
+        padding: 5px;
+      }
+    }
+
+    &__second-p {
+      line-height: 1.5;
+      text-align: start;
+      margin-bottom: 1rem;
+      color: #757575;
+    }
+  }
+}
+
+// ------------------------our menu-----------------------
+
+.ourmenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    width: 31rem;
+    height: 39rem;
+    padding: 64px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    flex-direction: column;
+
+    &:after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      background-color: #dfd2d2;
+      width: 70%;
+      margin-left: 40rem;
+      top: 100%;
+    }
+
+    &__h1 {
+      font-family: "Playfair Display";
+      letter-spacing: 5px;
+      font-weight: 400;
+      margin: 10px 0;
+      font-size: 36px;
+      margin-bottom: 2rem;
+    }
+
+    &__h4 {
+      font-family: "Playfair Display";
+      letter-spacing: 5px;
+      margin-bottom: 1rem;
+      font-weight: 400;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    &__first-p {
+      color: #757575;
+      font-size: 15px;
+      line-height: 3.5;
+    }
+  }
+
+  &__image {
+    padding: 64px;
+
+    &__img {
+      width: 500px;
+      height: 627px;
+      filter: opacity(0.6);
+      object-fit: cover;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    width: 50rem;
+
+    &__image {
+      margin-left: 2rem;
+      &__img {
+        width: 300px;
+        height: 427px;
+        filter: opacity(0.6);
+      }
+    }
+
+    &__content {
+      text-align: center;
+      &__h1 {
+        font-family: "Playfair Display";
+        letter-spacing: 2px;
+        font-size: 24px;
+      }
+
+      &__h5 {
+        letter-spacing: 5px;
+        font-weight: 400;
+        margin: 10px 0;
+      }
+
+      &__first-p {
+        text-align: start;
+        margin-bottom: 1rem;
+
+        &__span {
+          background-color: #f1f1f1;
+          padding: 5px;
+        }
+      }
+
+      &__second-p {
+        display: none;
+      }
+    }
+  }
+
+  .ourmenu {
+    width: 50rem;
+
+    &__content {
+      display: flex;
+      align-items: center;
+      padding: 64px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+      flex-direction: column;
+
+      &__h1 {
+        font-family: "Playfair Display";
+        letter-spacing: 2px;
+        font-weight: 200;
+        margin: 50px 0;
+        font-size: 24px;
+      }
+
+      &__h4 {
+        font-family: "Playfair Display";
+        letter-spacing: 1px;
+        font-weight: 200;
+        font-size: 18px;
+        margin: 5px 0;
+      }
+
+      &__first-p {
+        color: #757575;
+        font-size: 15px;
+        line-height: 1.5;
+      }
+    }
+
+    &__image {
+      padding: 64px;
+
+      &__img {
+        width: 250px;
+        height: 380px;
+        filter: opacity(0.6);
+        object-fit: cover;
+      }
+    }
+  }
+}
