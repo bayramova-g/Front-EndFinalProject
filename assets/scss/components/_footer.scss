@@ -1,19 +1,95 @@
 .footer {
-    background-color: $grey-color;
-    height: 7rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: stretch;
+  padding: 35px 0 25px;
+  min-height: calc(100vh - 80px);
+  background-color: #000;
+  background-image: url(/assets/img/footer_bg.svg);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+
+  &__footer-first {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .footer {
-      background-color: $grey-color;
-      width: 135vw;
-      height: 7rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+
+    &__h2 {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 1.29;
+      letter-spacing: 0.01em;
+      color: white;
+    }
+
+    &__r-side {
+      width: calc(100% - 360px);
+
+      &__header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        padding: 0 0 50px;
+
+        &__footer-nav {
+          font-size: 0;
+
+          &__ul {
+            list-style: none;
+            &__li {
+              display: inline-block;
+              padding: 0 48px;
+
+              :first-child {
+                border-left: none;
+                padding-left: 0;
+              }
+
+              &__a {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 1.33;
+                letter-spacing: 0.01em;
+                color: rgba(255, 255, 255, 0.5);
+                text-decoration: none;
+                text-transform: uppercase;
+                animation-duration: 0.15s;
+                transition: all 0.15s linear;
+              }
+            }
+          }
+        }
+
+        &__link {
+          &__a {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            height: 56px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 56px;
+            color: #fff;
+            text-decoration: none;
+            box-shadow: inset 0 0 0 3px #dfe4eb;
+            border-radius: 12px;
+          }
+        }
+      }
     }
   }
-  
+}
