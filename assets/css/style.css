@@ -213,80 +213,6 @@
           top: 0;
           z-index: 1; }
 
-.ourproducts {
-  padding: 60px 0;
-  background-color: #2d3192;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
-  background-image: url(/assets/img/products_bg.svg); }
-  .ourproducts__div {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 20px; }
-    .ourproducts__div__h2 {
-      padding: 0 0 60px;
-      font-weight: 600;
-      font-size: 56px;
-      line-height: 1.29;
-      letter-spacing: 0.01em;
-      color: #fff; }
-    .ourproducts__div__products-round {
-      width: 618px;
-      height: 624px;
-      margin: 0 auto;
-      position: relative; }
-      .ourproducts__div__products-round__item8 {
-        width: 202px;
-        height: 202px;
-        position: absolute;
-        left: 29px;
-        top: 31px; }
-      .ourproducts__div__products-round__item7 {
-        width: 150px;
-        height: 210px;
-        position: absolute;
-        left: 0;
-        top: 208px; }
-      .ourproducts__div__products-round__item6 {
-        width: 202px;
-        height: 202px;
-        position: absolute;
-        left: 28px;
-        top: 390px; }
-      .ourproducts__div__products-round__item-block {
-        transition-delay: 0.7s;
-        opacity: 1;
-        visibility: visible;
-        transform: scale(1);
-        width: 210px;
-        height: 150px;
-        position: absolute;
-        left: calc(50% - 105px);
-        top: 0px; }
-        .ourproducts__div__products-round__item-block__a {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: nowrap;
-          justify-content: center;
-          align-content: stretch;
-          align-items: center;
-          width: 100%;
-          height: 100%;
-          font-weight: bold;
-          font-size: 18px;
-          line-height: 1;
-          text-align: center;
-          letter-spacing: 0.01em;
-          color: #fff;
-          text-decoration: none;
-          background-color: #3595ee;
-          object-fit: cover;
-          transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1); }
-          .ourproducts__div__products-round__item-block__a__span {
-            display: inline-block;
-            padding: 0 15px; }
-
 .image {
   display: flex;
   flex-direction: row;
@@ -458,6 +384,87 @@
         border-radius: 12px;
         animation-duration: 0.15s;
         transition: all 0.15s linear; }
+
+.latest-news {
+  min-height: calc(100vh - 80px);
+  padding: 35px 0 80px; }
+  .latest-news__div {
+    transform: translate(0, 0);
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+    opacity: 1;
+    transform: translate(0, 60px);
+    animation-duration: 0.6s;
+    transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1); }
+    .latest-news__div__header {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-content: stretch;
+      align-items: center;
+      padding: 0 0 40px; }
+      .latest-news__div__header__h2 {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 1.3;
+        letter-spacing: 0.01em;
+        color: #2d3192; }
+      .latest-news__div__header__link__a {
+        display: inline-block;
+        height: 56px;
+        padding: 0 100px 0 24px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 56px;
+        color: #222;
+        text-decoration: none;
+        background: url(//assets/img/link_orange_icon.svg) no-repeat calc(100% - 24px) 50%;
+        box-shadow: inset 0 0 0 3px #dfe4eb;
+        border-radius: 12px;
+        animation-duration: 0.15s;
+        transition: all 0.15s linear; }
+    .latest-news__div__three_news {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: stretch; }
+      .latest-news__div__three_news__article {
+        width: calc(33.333% - 20px);
+        position: relative;
+        margin-left: 1rem; }
+        .latest-news__div__three_news__article__image {
+          margin: 0 0 24px;
+          font-size: 0;
+          border-radius: 6px;
+          overflow: hidden;
+          position: relative; }
+          .latest-news__div__three_news__article__image__img {
+            display: block;
+            width: 100%;
+            animation-duration: 0.3s;
+            transition: all 0.3s linear; }
+        .latest-news__div__three_news__article__h3 {
+          padding: 0 0 48px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 1.75;
+          color: #222; }
+        .latest-news__div__three_news__article__time {
+          font-size: 18px;
+          line-height: 1.33;
+          color: #5f6773; }
+        .latest-news__div__three_news__article__a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 1; }
 
 .show-me::before {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }

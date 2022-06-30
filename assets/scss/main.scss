@@ -6,9 +6,9 @@
 @import "./pages/index";
 @import "./pages/contact";
 @import "./pages/whatwedo";
-@import "./pages/ourproducts";
 @import "./pages/indexteam";
 @import "./pages/advantages";
+@import "./pages/lastestNew";
 
 @import "./pages/tech";
 @import "./pages/timers";
@@ -17,30 +17,25 @@
 @import "./pages/ourclients";
 @import "./reset";
 
-
-
-.scrolling-active{
-transition: 0.5s;
-background-color: #fff;
-box-shadow: 0 3px 1rem rgba(0,0,0,.1);
-height: 93px;
-
+.scrolling-active {
+  transition: 0.5s;
+  background-color: #fff;
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+  height: 93px;
 }
 
-.scrolling-active .header__nav__link-list__item__link{
+.scrolling-active .header__nav__link-list__item__link {
   color: black;
 }
-.scrolling-active .header__nav__logo{
+.scrolling-active .header__nav__logo {
   background-image: url(../img/logo_colored.svg);
 }
 
-.scrolling-active .header__nav{
+.scrolling-active .header__nav {
   height: 3rem;
-
 }
 
 .main {
-
   &__bg {
     background-color: black;
     &__image {
@@ -96,12 +91,9 @@ height: 93px;
           top: 90%;
           left: 10%;
 
-          &:hover{
-
-color: white;
-
+          &:hover {
+            color: white;
           }
-
         }
       }
     }
