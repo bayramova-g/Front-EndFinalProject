@@ -8,7 +8,7 @@
   padding: 35px 0 25px;
   min-height: calc(100vh - 80px);
   background-color: #000;
-  background-image: url(/assets/img/footer_bg.svg);
+  background-image: url(/assets/img/1/footer_bg.svg);
   background-repeat: no-repeat;
   background-position: 0 50%;
 
@@ -90,6 +90,119 @@
           }
         }
       }
+
+      &__footer-contacts {
+        &__show-me {
+          display: block;
+
+          &__li {
+            padding: 0 0 48px;
+
+            &__span {
+              display: block;
+              padding: 0 0 12px;
+              font-size: 18px;
+              line-height: 1.45;
+              color: rgba(255, 255, 255, 0.6);
+            }
+
+            &__p {
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 1.54;
+              color: #fff;
+            }
+          }
+
+          &__li {
+            &__span {
+              &__p {
+                &__a {
+                  color: #fff;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
+
+
+&__footer-last{
+
+
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 40px 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: stretch;
+
+
+&__jis{
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;;
+  align-items: center;
+
+
+  &__p{
+
+    padding: 0 10px 0 0;
+    font-size: 12px;
+    line-height: 2.67;
+    color: #fff;
+
+  }
+
+  &__a{
+
+    display: inline-block;
+    padding: 0 0 0 30px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.67;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+&:before{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(/assets/img/jis_logo.svg) no-repeat 0 0;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 10px);
+
+}
+  }
+}
+
+
+&__copyright{
+
+  width: calc(100% - 360px);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #999;
+
+}
+
+}
+
+
 }
