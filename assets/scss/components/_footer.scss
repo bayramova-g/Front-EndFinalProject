@@ -129,80 +129,64 @@
     }
   }
 
+  &__footer-last {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 40px 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
 
-&__footer-last{
+    &__jis {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: center;
 
+      &__p {
+        padding: 0 10px 0 0;
+        font-size: 12px;
+        line-height: 2.67;
+        color: #fff;
+      }
 
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 40px 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-content: stretch;
-  align-items: stretch;
+      &__a {
+        display: inline-block;
+        padding: 0 0 0 30px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 2.67;
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        &:before {
+          content: "";
+          display: block;
+          width: 20px;
+          height: 20px;
+          background: url(/assets/img/jis_logo.svg) no-repeat 0 0;
+          position: absolute;
+          left: 0;
+          top: calc(50% - 10px);
+        }
+      }
+    }
 
-
-&__jis{
-
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: stretch;;
-  align-items: center;
-
-
-  &__p{
-
-    padding: 0 10px 0 0;
-    font-size: 12px;
-    line-height: 2.67;
-    color: #fff;
-
+    &__copyright {
+      width: calc(100% - 360px);
+      font-size: 16px;
+      line-height: 1.5;
+      color: #999;
+    }
   }
-
-  &__a{
-
-    display: inline-block;
-    padding: 0 0 0 30px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 2.67;
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-&:before{
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: url(/assets/img/jis_logo.svg) no-repeat 0 0;
-  position: absolute;
-  left: 0;
-  top: calc(50% - 10px);
-
-}
-  }
-}
-
-
-&__copyright{
-
-  width: calc(100% - 360px);
-  font-size: 16px;
-  line-height: 1.5;
-  color: #999;
-
-}
-
-}
-
-
 }
