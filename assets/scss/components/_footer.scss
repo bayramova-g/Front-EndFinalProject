@@ -154,7 +154,7 @@
       align-items: center;
 
       &__p {
-        padding: 0 10px 0 0;
+        padding: 11px 10px 0 0;
         font-size: 12px;
         line-height: 2.67;
         color: #fff;
@@ -169,6 +169,9 @@
         color: #fff;
         text-decoration: none;
         position: relative;
+        &:hover {
+          color: #fff;
+        }
         &:before {
           content: "";
           display: block;
